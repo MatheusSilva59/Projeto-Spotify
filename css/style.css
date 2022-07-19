@@ -2,6 +2,7 @@
 
 html, body{
     overflow-x: hidden;
+    height: 100vh;
 }
 body{
     background: url(../images/capa.png), url(../images/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
@@ -133,14 +134,11 @@ footer .icon{
     font-weight: 900;
     margin-bottom: 2rem;
 }
-@keyframes services-shadow {
-    0%{
-    box-shadow: inset 0px 0px 6px 1px #000000a8;
-    }
-    100%{
-    box-shadow: inset 0px 0px 12px 2px #000000a8;
-    }
+.responsive-height{
+    height: 98vh;
 }
+
+
 @media (min-width: 990px){
     .img-rotated{
     top: 0%;
@@ -174,14 +172,22 @@ footer .icon{
     background-image: linear-gradient( to right, #14041200, #1402184a, #14041203);
     }
     .same-width{
-    width: 100px;
+    width: 125px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 550px){
     .slide-carousel h1{
     font-size: 2em;
     }
     .btn-custom{
     font-size: 12px;
+    }
+}
+@keyframes services-shadow {
+    0%{
+    box-shadow: inset 0px 0px 6px 1px #000000a8;
+    }
+    100%{
+    box-shadow: inset 0px 0px 12px 2px #000000a8;
     }
 }
