@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+html, body{
+    overflow-x: hidden;
+}
+body{
+    background: url(../images/capa.png), url(../images/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+}
+header{
+    background: #140412a8;
+}
+header a{
+    color: white;
+    font-size: 1em;
+}
+header .nav-link-custom{
+    border-bottom: 1px solid transparent;
+}
+section.services{
+    z-index: -2;
+    position: relative;
+    animation-name: services-shadow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.services h2, h4{
+    color: #7c25f8;
+}
+.services h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+.services h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.img-rotated{
+    transform: rotate(30deg);
+    z-index: -1;
+    position: absolute;
+    top: 6%;
+    right: -10%;
+}
+/* section.functions{
+
+} */
+.functions h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.functions p {
+    color: white;
+}
+.functions h4{
+    color: #9bf0e1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+footer{
+    z-index: 10;
+    background-color: black;
+}
+footer h6{
+    color: #919496;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 400;
+}
+footer a{
+    font-size: .8rem;
+    color: white;
+}
+footer .custom-link a{
+    text-decoration: none;
+}
+.custom-link a:hover{
+    color: #9bf0e1;
+}
+footer .icon{
+    width: 50px;
+    height: 50px;
+    background-color: #202020;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.icon-animation:hover{
+    font-size: 2rem;
+    transition-duration: .4s;
+    color: white;
+}
+.icon-instagram{
+    margin: 1px 0px 0px 0px;
+}
+.icon-twitter{
+    margin: 3px -2px 0px 0px;
+}
+.icon-facebook{
+    margin: 1px 0px 0px -1px;
+}
+/* #carousel-top{
+    
+} */
+.carousel-indicators{
+    bottom: -50px;
+}
+.btn-purple{
+    background-color: #7c25f8;
+    color: white;
+}
+.btn-purple:hover{
+    background-color: #5720a5;
+    color: white;
+    transition-duration: .5s;
+}
+.btn-custom{
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.btn-custom:hover{
+    transition-duration: .5s;
+}
+.slide-carousel h1{
+    font-size: 6em;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+@keyframes services-shadow {
+    0%{
+    box-shadow: inset 0px 0px 6px 1px #000000a8;
+    }
+    100%{
+    box-shadow: inset 0px 0px 12px 2px #000000a8;
+    }
+}
+@media (min-width: 990px){
+    .img-rotated{
+    top: 0%;
+    right: 0%;
+    position: relative;
+    }
+}
+@media (max-width: 1199.98px){
+    .slide-carousel h1{
+    font-size: 5em;
+    }
+    .btn-custom{
+    font-size: 16px;
+    }
+}
+@media (max-width: 998.98px){
+    .slide-carousel h1{
+    font-size: 4em;
+    }
+}
+@media (max-width: 850px){
+    .slide-carousel h1{
+    font-size: 3.5em;
+    }
+}
+@media(max-width: 767.98px){
+    .slide-carousel h1{
+    font-size: 3em;
+    }
+    header .nav-link-custom{
+    background-image: linear-gradient( to right, #14041200, #1402184a, #14041203);
+    }
+    .same-width{
+    width: 100px;
+    }
+}
+@media (max-width: 500px){
+    .slide-carousel h1{
+    font-size: 2em;
+    }
+    .btn-custom{
+    font-size: 12px;
+    }
+}
