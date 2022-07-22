@@ -131,6 +131,9 @@ footer .icon{
     font-weight: 900;
     margin-bottom: 2rem;
 }
+.mb-responsive{
+    margin-bottom: 4rem;
+}
 .responsive-height{
     height: 98vh;
 }
